@@ -7,8 +7,8 @@ public class ThrowableUtil {
     /**
      * 获取Throwable详细信息
      *
-     * @param throwable
-     * @return
+     * @param throwable 异常报错对象
+     * @return 详细调用栈
      */
     private static String getThrowableInfo(Throwable throwable){
         StringWriter writer = new StringWriter();

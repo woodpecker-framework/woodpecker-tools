@@ -146,6 +146,13 @@ public class BASE64Decoder {
         }
     }
 
+    /**
+     * Base64解码
+     *
+     * @param var1 要解码的结果
+     * @return 解码结果
+     * @throws IOException
+     */
     public byte[] decodeBuffer(String var1) throws IOException {
         byte[] var2 = new byte[var1.length()];
         var1.getBytes(0, var1.length(), var2, 0);

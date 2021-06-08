@@ -201,6 +201,12 @@ public class BASE64Encoder {
     }
 
 
+    /**
+     * Base64编码
+     *
+     * @param var1 要编码的数据
+     * @return 编码结果
+     */
     public String encodeBuffer(byte[] var1) {
         ByteArrayOutputStream var2 = new ByteArrayOutputStream();
         ByteArrayInputStream var3 = new ByteArrayInputStream(var1);

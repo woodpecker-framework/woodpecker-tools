@@ -4,6 +4,12 @@ package me.gv7.woodpecker.tools.codec;
  * Reference: https://www.cnblogs.com/xiaoyaogege/p/6306689.html
  */
 public class HexUtil {
+    /**
+     * hex编码
+     *
+     * @param src 要编码的数据
+     * @return 编码结果
+     */
     public static String encode(byte[] src) {
         String strHex = "";
         StringBuilder sb = new StringBuilder("");
@@ -15,6 +21,12 @@ public class HexUtil {
         return sb.toString().trim();
     }
 
+    /**
+     * hex解码
+     *
+     * @param src 要解码的数据
+     * @return 解码结果
+     */
     public static byte[] decode(String src) {
         int m = 0, n = 0;
         // 每两个字符描述一个字节
@@ -27,10 +39,5 @@ public class HexUtil {
             ret[i] = Byte.valueOf((byte)intVal);
         }
         return ret;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(HexUtil.encode("bbbbb".getBytes()));
-        System.out.println(new String(HexUtil.decode("6262626262")));
     }
 }
