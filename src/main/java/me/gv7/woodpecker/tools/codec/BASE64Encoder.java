@@ -221,6 +221,17 @@ public class BASE64Encoder {
     }
 
 
+    /**
+     * Base64编码不带换行符
+     *
+     * @param data
+     * @return
+     */
+    public String encodeBufferNoNewline(byte[] data){
+        return encodeBuffer(data).replace(System.getProperty("line.separator"),"");
+    }
+
+
     public void encodeBuffer(ByteBuffer var1, OutputStream var2) throws IOException {
         byte[] var3 = this.getBytes(var1);
         this.encodeBuffer(var3, var2);

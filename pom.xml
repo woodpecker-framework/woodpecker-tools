@@ -6,7 +6,7 @@
 
     <groupId>me.gv7.woodpecker</groupId>
     <artifactId>woodpecker-tools</artifactId>
-    <version>0.1.0.beta1</version>
+    <version>0.1.0</version>
 
 
     <name>woodpecker-tools</name>
