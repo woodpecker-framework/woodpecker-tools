@@ -18,18 +18,19 @@
     
     
 ## 0x02 使用
+
 Maven
 
 ```xml
 <dependency>
   <groupId>me.gv7.woodpecker</groupId>
   <artifactId>woodpecker-tools</artifactId>
-  <version>0.1.0.beta1</version>
+  <version>0.1.1</version>
 </dependency>
 ```
 
 Gradle
 
 ```
-implementation 'me.gv7.woodpecker:woodpecker-tools:0.1.0.beta1'
+implementation 'me.gv7.woodpecker:woodpecker-tools:0.1.1'
 ```
